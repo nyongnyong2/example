@@ -100,7 +100,7 @@
   color: #787878;
   margin: 20px 0 40px;
 }
-#project > button{
+#project > a{
   width: 170px;
   height: 50px;
   border: 0; outline: 0;
@@ -111,6 +111,6 @@
   letter-spacing: 2px;
   cursor: pointer;
 }
-#project > button:hover{
+#project > a:hover{
   background-color: #0ab6b1;
 }
