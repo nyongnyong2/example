@@ -112,6 +112,7 @@
   letter-spacing: 2px;
   cursor: pointer;
 }
+
 #project > a:hover{
   background-color: #0ab6b1;
 }
