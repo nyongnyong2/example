@@ -1,7 +1,13 @@
 *{margin: 0; padding:0;}
 ul{list-style: none;}
 a{text-decoration: none; color: inherit;}
-body{
-  font-family: "카페24 써라운드";
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+body{
+  font-family: 'Cafe24Ssurround';
 }
