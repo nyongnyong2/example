@@ -1,0 +1,397 @@
+/*contents1*/
+#contents1{
+  min-width: 1920px;
+  height: 1028px;
+  background: url(../img/background.png);
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  position: relative;
+}
+#contents1 > .album > .conan{
+  width: 766px;
+  height: 493px;
+}
+#contents1 > .album > .conan img{
+  position: absolute;
+  top:200px; left: 210px;
+}
+#contents1 > .round{
+  position: absolute;
+  z-index: 9;
+  right: 780px; top: 252px;
+}
+.playIcon{
+  /*outline: 1px solid red;*/
+  background-color:black;
+  color: #dbdbdb;
+  padding: 10px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  position: absolute;
+  right: 916px; bottom: 564px;
+  z-index: 10;
+  cursor: pointer;
+}
+.playIcon:hover{
+  background-color: #dbdbdb;
+  color: black;
+}
+#contents1 > .album > .conan>.txtBox{
+  position: absolute;
+  top:700px; left: 220px;
+}
+.txtBox p{
+  color: #fff;
+  margin-top: 10px;
+}
+.txtBox >.artist{
+  font-size: 28px;
+  line-height: 30px;
+}
+.txtBox > .song{
+  font-size: 22px;
+}
+.maniac{
+  position: absolute;
+  right: 600px; top :400px;
+  font-family: "Mogen";
+  letter-spacing: 2px;
+  color: #fff; 
+ }
+ .maniac > .title{
+   font-size: 35px; 
+ }
+ .maniac > .artistName{
+   font-size: 20px;
+ }
+
+#contents1 > .albumImg{
+  width: 1060px;
+  height: 1010px;
+  position: absolute;
+  top:800px; left: 400px;
+  cursor: pointer;
+  display: block;
+}
+#contents1 > .albumImg >.top >.one
+,#contents1 > .albumImg >.top >.two{
+  width: 1040px;
+  height: 230px;
+  margin-left: 260px;
+  margin-bottom: 30px;
+}
+#contents1 > .albumImg >.top >.one img{
+  margin-right: 30px;
+}
+#contents1 > .albumImg >.top >.two img{
+  margin-right: 30px;
+}
+#contents1 > .albumImg >.bottom >.three{
+  display: flex;
+}
+#contents1 > .albumImg >.bottom >.three >.sign img{
+  margin-right: 26px;
+}
+#contents1 > .albumImg >.bottom >.three >.four{
+  width: 540px;
+  height: 500px;
+ 
+}
+#contents1 > .albumImg >.bottom >.three >.four >.top img{
+  margin-right: 30px;
+  margin-bottom: 28px;
+}
+/*앨범자켓img에 마우스를 올리면*/
+.one img:hover,
+.two img:hover,
+.four img:hover
+{animation:scale 0.5s ease;}
+@keyframes scale{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.1);}
+  100%{transform:scale(1);}
+}
+
+/*banner*/
+#banner{
+  width: 1920px;
+  height: 315px;
+  margin-top: 840px;
+  cursor: pointer;
+}
+
+/*contents2*/
+#contents2{
+  width: 1920px;
+  height: 550px;
+  color: #fff;
+  background-color: #151515;
+}
+#contents2 >.ryn{
+  width: 1284px;
+  height: 446px;
+  border: 1px solid #dbdbdb;
+  position: absolute;
+  margin-top: 80px;
+  left: 320px;  
+}
+#contents2 > .ryn >.left{
+  position: relative;
+  width: 604px;
+  height: 450px;
+}
+#contents2 > .ryn >.left p{
+  position: absolute;
+  bottom: 10px; right: 30px;
+  font-size: 20px;
+}
+#contents2 > .ryn >.left >.rynImg>.play{
+  position: absolute;
+  background-image: url(../img/mv_play.png);
+  z-index: 1;
+  top:0; bottom:0; left: 0; right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  background-color: rgba(76, 75, 77, 0.6);
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#contents2 >.ryn >.left .rynImg:hover .play{opacity: 1; visibility: visible;}
+
+#contents2 >.ryn >.right{
+  width: 720px;
+  height: 450px;
+  z-index: 2;
+  position: absolute;
+  top:0; right: 0;
+  }
+#contents2 >.ryn >.right p{
+  margin: 20px;
+  margin-left: 60px;
+  font-size: 26px;   
+  }
+#contents2 >.ryn >.right >.albumImg img{
+  border-radius: 20px;
+  margin-right: 30px;
+  margin-top: 50px; 
+  }
+.bottom1{
+  margin-top: 40px;
+  margin-left: 74px;
+}
+.bottom1 h2{
+  width: 70px;
+  border-bottom: 6px solid #fff; 
+  font-size: 30px;
+  }
+.line{
+  position: absolute;
+  bottom:44px;
+  width: 210px;
+  border-bottom: 2px solid #fff;
+}
+.playlist{
+  display: flex;
+  position: absolute;
+  bottom: 50px; right: 10px;
+}
+.playlist li{
+  margin-right: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*contents3*/
+#contents3{
+  width: 1920px;
+  height: 1000px;
+  color: #fff;
+  background-color: #151515;
+}
+#contents3 > .music{
+  width: 1282px;
+  height: 774px;
+  border: 1px solid #dbdbdb;
+  position: absolute;
+  left: 320px;
+  margin-top: 80px;
+}
+#contents3 > .music >.left{
+  width: 770px;
+  height: 680px;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+#contents3 > .music >.left> p{
+  font-size: 26px;
+  margin-bottom: 62px;
+  letter-spacing: 2px
+}
+#contents3 >.music >.left >.chart >.number{
+  border: 1px solid #a0a0a0;
+  height: 84px;
+  width: 700px;
+  border-radius: 20px;
+  margin-bottom: 34px;
+  display: flex;
+
+}
+#contents3 >.music >.left >.chart >.number h1{
+  margin: 30px;
+  font-size: 26px;
+  color: #a0a0a0;
+}
+#contents3 >.music >.left >.chart >.number >.txt{
+  margin: 20px;
+  width: 380px;
+}
+#contents3 >.music >.left >.chart >.number >.txt b{
+  font-size: 19px;
+  cursor: pointer;
+}
+#contents3 >.music >.left >.chart >.number >.txt p{
+  font-size: 15px;
+  color: #504e4e;
+  margin-top: 10px;
+}
+#contents3 >.music >.left >.chart >.number >.txt b:hover{
+  color: #0289ea;
+}
+#contents3 >.music >.left >.chart >.number >.heart{
+  margin:30px;
+  font-size: 26px;
+  color: #504e4e;
+  cursor: pointer;
+}
+#contents3 >.music >.left >.chart >.number >.heart:hover{
+ color: #0289ea;
+}
+#contents3 >.music >.left >.chart >.number > .albumImg{
+  margin: 10px;
+}
+#contents3 >.music >.right{
+  width: 420px;
+  height: 680px;
+  position: absolute;
+  right: 0; top: 60px;
+}
+#contents3 >.music >.right{
+  font-size:26px;
+}
+
+#contents3 > .music >.right >.txtBox >.txt{
+  padding: 50px 0;
+}
+#contents3 > .music >.right >.txtBox >.txt p{
+  line-height: 22px;
+}
+#contents3 > .music >.right > .albumImg i {
+color: #fff;
+font-size: 64px;
+position: absolute;
+top: 54%; left: 36%;
+opacity: 0.8;
+cursor: pointer;
+}
+#contents3 > .music >.right > .albumImg i:hover{
+  color: #151515;
+}
+
+/*contents4*/
+#contents4{
+  width: 1920px;
+  height: 800px;
+  color: #fff;
+  background-color: #151515;
+  position: relative;
+  overflow: hidden;
+}
+#contents4 h1{
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 2px;
+  border-top: 1px solid #fff;
+  padding-top: 80px;
+}
+
+#contents4 >.box{
+  width: 1480px;
+  height: 400px;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 200px;
+  overflow: hidden;
+  position: absolute;
+}
+
+#contents4 >.box >.mv{
+  margin-right: 66px;
+}
+#contents4 >.box >.mv:nth-child(4){
+  margin-right: 60px;
+}
+
+#contents4 >.box >.mv >.on{
+  width: 320px;
+  height: 240px;
+  position: relative;
+  }
+
+  #contents4 >.box >.mv >.on >.time{
+   position: absolute;
+   right: 0; bottom: 0;
+   background-color: black;
+   padding: 5px;
+   font-size: 13px;
+  }
+  #contents4 >.box >.mv >.txt{
+    margin-top: 34px;
+    font-size: 18px;
+  }
+  #contents4 >.box >.mv >.txt p{
+    line-height: 40px; 
+  }
+  #contents4 >button{
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 60px;
+    cursor: pointer;
+    color: #fff;
+    top:300px; left: 100px;
+    
+   }
+   .next{
+    right: -1500px;
+   }
+
+  
+  
+/*하이라이트*/
+
+#contents4 >.box >.mv >.on>.play{
+  position: absolute;
+  z-index: 6;
+  background-image: url(../img/mv_play.png);
+  top:0; bottom:0; left: 0; right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  background-color: rgba(80, 82, 82, 0.6);
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#contents4 >.box >.mv >.on:hover .play{opacity: 1; visibility: visible;}
+
+
+
+
+
+
+  
+ 
+

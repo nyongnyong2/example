@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+  
+<head>
+  <meta charset="utf-8">
+  <title>genie</title>
+    <!--폰트어썸 CDN-->
+    <script src="https://kit.fontawesome.com/a3b40e4853.js" crossorigin="anonymous"></script>
+    <!--외부정의 css-->
+    <link href="css2/reset2.css" rel="stylesheet">
+    <link href="css2/header2.css" rel="stylesheet">
+    <link href="css2/home2.css" rel="stylesheet">
+    <link href="css2/footer2.css" rel="stylesheet">
+
+ 
+  </script>
+   <!--jquery라이브러리-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+   <!--custom.js-->
+   <script src="js/custom.js"></script>
+ <!-- <script>
+   $(function(){//document.ready
+      var showImg, nextImg;//현재보이는 이미지와 다음에 보이는 이미지를 할당한 변수선언
+      function fadeInOut(){//fadeInOut함수 선언
+        showImg = $(".conan > img:eq(0)");//첫번째 이미지를 showImg에 할당(현재 보이는 이미지)
+        nextImg = $(".conan > img:eq(1)");//두번째 이미지를 nextImg에 할당(다음에 보여져야할 이미지)
+
+        nextImg.addClass("active").css("opacity",0);//다음에 보여져야하는 이미지에 active클래스를 적용하여 z-index를 1로 설정하고 opacity를 0으로 안보이게 합니다.
+       
+        //nextImg요소의 opacity를 1로 1초동안 변경하여 화면에 표시
+        nextImg.animate({"opacity":1},1000.,function(){
+          //애니메이션기능이 모두 종료된 후 첫번째 이미지를 마지막 위치로 변경하고 active클래스를 제거하여 z-index:1이 적용되지 않도록 한다.
+          $(".conan").append(showImg);
+          showImg.removeClass("active");
+        })
+      }
+      setInterval(fadeInOut,3000);//fadeInOut함수를 3초에 한번씩 반복 실행
+     
+    });
+  </script>-->
+
+
+</head>
+<body>
+  <!--header-->
+  <header>
+    <div class="wrap">
+      <div class="logo">
+        <a href="index2.html"><img src="img/logo_header.png"></a>
+      </div>
+      <ul class="navi">
+        <li><a href="about2.html">최신음악</a></li>
+        <li><a href="#">지니차트</a></li>
+        <li><a href="#">장르음악</a></li>
+        <li><a href="#">지니TV</a></li>
+        <li><a href="#">뮤직허그</a></li>
+      </ul>
+      <ul class="login">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+      </ul>
+    </div>
+  </header>
+<!--contents1-->
+  <section id="contents1">
+    <div class="round"><img src="img/round.png" alt=""></div>
+    <div class="playIcon"><i class="fa-solid fa-play fa-2x"></i></div>
+    <div class="album">
+      <div class="conan">
+        <img class="active" src ="img/conan.png" alt="">
+        <img src = "img/conan2.jpg" alt="" width=766 height="493">
+        <img src = "img/conan3.jpg" alt="" width=766 height="493">
+        <div class="txtBox">
+          <p class="artist">이달의 아티스트  Conan Gray</p>
+          <p class="song">대표곡:Maniac, Memories, Heather</p>
+        </div>
+      </div>
+      <div class="maniac">
+        <p class="title">Maniac</p>
+        <p class="artistName">Conan Gray</p>
+      </div>
+    </div>
+    <div class="albumImg">
+     <div class="top">
+      <div class="one">
+        <img src="img/album1.png" alt="">
+        <img src="img/album2.png" alt="">
+      </div>
+      <div class="two">
+        <img src="img/album3.png" alt="">
+        <img src="img/album4.png" alt="">
+        <img src="img/album5.png" alt="">
+      </div>
+    </div>
+      <div class="bottom">
+        <div class="three">
+          <div class="sign"><img src="img/sign.png" alt="" width=500 height=500></div>
+          <div class="four">
+            <div class="top">
+             <img src="img/album6.png" alt="">
+             <img src="img/album7.png" alt="">
+             </div>
+             <img src="img/album8.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--banner-->
+  <section id="banner">
+    <img src="img/banner.png">
+  </section>
+  <!--contents2-->
+    <section id="contents2">
+      <div class="ryn">
+        <div class="left">
+          <div class=rynImg>
+            <img src="img/ryn.png" alt="">
+            <div class="play"></div>
+            <p>린(LYn)<br>백야</p>
+          </div>
+        <!--  <img class="button Gray" src="img/playgray.png" alt="">
+          <img class="button White" src="img/playwhite.png" alt="">-->
+      </div>
+      <div class="right">
+        <p>오늘 발매된 뮤직 &gt; </p>
+        <div class="albumImg">
+          <img src="img/ryn2.png" alt="">
+          <img src="img/ryn3.png" alt="">
+          <img src="img/ryn4.png" alt="">
+         <div class="bottom">
+          <div class="bottom1">
+            <h2>01</h2>
+            <div class="line"></div>
+          </div>
+          <div class="bottom2">
+            <ul class="playlist">
+              <li><i class="fa-solid fa-backward"></i> Prev</li>
+              <li>Next <i class="fa-solid fa-forward"></i></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+       </div> 
+    </div>
+   </section>
+  <!--contents3-->
+  <section id="contents3"> 
+    <div class="music"> 
+    <div class="left">
+      <p>실시간 뮤직 차트 &gt; </p>
+      <div class="chart">
+        <div class="number">
+          <h1>1</h1>
+          <div class="txt">
+            <b>새삥 (Prod. by ZICO) (Feat. 호미들)</b>
+            <p>지코(ZICO)</p>
+          </div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+          <div class="albumImg"><img src="img/chart1.png"></div>
+        </div>
+        <div class="number">
+          <h1>2</h1>
+          <div class="txt">
+            <b>After LIKE</b>
+            <p>IVE (아이브)</p>
+          </div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+          <div class="albumImg"><img src="img/chart2.png"></div>
+        </div>
+        <div class="number">
+          <h1>3</h1>
+          <div class="txt">
+            <b>Shut Down</b>
+            <p>Blackpink</p>
+          </div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+          <div class="albumImg"><img src="img/chart3.png"></div>
+        </div>
+        <div class="number">
+          <h1>4</h1>
+          <div class="txt">
+            <b>Hype boy</b>
+            <p>NewJeans</p>
+          </div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+          <div class="albumImg"><img src="img/chart4.png"></div>
+        </div>
+        <div class="number">
+          <h1>5</h1>
+          <div class="txt">
+            <b>그때 그 순간 그대로 (그그그)</b>
+            <p>WSG워너비 (가야G)</p>
+          </div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+          <div class="albumImg"><img src="img/chart5.png"></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="right">
+      <div class="txtBox">
+        <b>가을에 듣기 좋은 음악 &gt;</b> 
+       <div class="txt">
+        <p>&#35; 오늘의 선곡</p>
+        <p>&#35; 자전거</p>
+        <p>&#35; 공원</p>
+       </div>
+    </div>
+      <div class="albumImg">
+        <img src="img/chart6.png" alt="">
+        <i class="fa-regular fa-circle-play"></i>
+    </div>
+  </div>
+    </div>
+  </section>
+  <!--contents4-->
+  <section id="contents4">
+    <h1>지니TV가 추천하는 MV</h1>
+    <div class="box">
+      <div class="mv">
+        <div class="mvImg on">
+         <img src="img/mv1.png" alt="">
+         <div class="play"></div>
+         <div class="time">
+          03&#58;05
+         </div>
+       </div>
+       <div class="txt">
+        <p>Rush Hour (Feat. j-hope of BTS)</p>
+        <p>Crush</p>
+       </div>
+      </div>
+      <div class="mv">
+        <div class="mvImg on">
+         <img src="img/mv2.png" alt="">
+         <div class="play"></div>
+         <div class="time">
+          03&#58;01
+         </div>
+       </div>
+       <div class="txt">
+        <p>LOVE DIVE</p>
+        <p>IVE(아이브)</p>
+       </div>
+      </div>
+      <div class="mv">
+        <div class="mvImg on">
+         <img src="img/mv3.png" alt="">
+         <div class="play"></div>
+         <div class="time">
+          03&#58;01
+         </div>
+       </div>
+       <div class="txt">
+        <p>AFTER LIKE</p>
+        <p>IVE(아이브)</p>
+       </div>
+      </div>
+      <div class="mv">
+        <div class="mvImg on">
+         <img src="img/mv4.png" alt="">
+         <div class="play"></div>
+         <div class="time">
+          03&#58;04
+         </div>
+       </div>
+       <div class="txt">
+        <p>SHUT DOWN</p>
+        <p>BLACKPINK</p>
+       </div>
+      </div>
+      <div class="mv">
+        <div class="mvImg on">
+         <img src="img/mv1.png" alt="">
+         <div class="play"></div>
+         <div class="time">
+          03&#58;05
+         </div>
+       </div>
+       <div class="txt">
+        <p>Rush Hour (Feat. j-hope of BTS)</p>
+        <p>Crush</p>
+       </div>
+      </div>
+    </div>
+    <button type="button" class="prev">
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+    <button type="button" class="next">
+      <i class="fa-solid fa-angle-right"></i>
+    </button>
+  </section>
+  <!--footer-->
+  <footer>
+    <div class="wrap">
+      <div class="top">
+        <a href="#">&#40;주&#41;지니뮤직</a>
+        <div class="menu">
+          <a href="#">이벤트</a>
+          <a href="#">고객센터</a>
+          <a href="#">이용안내</a>
+          <a href="#">서비스 전체보기 &gt;</a>
+        </div>
+       </div> 
+       <div class="middle">
+        <ul>
+          <li>대표이사 박현진 </li>
+          <li>통신판매일신고 2013&#45;서울강남&#45;01302</li>
+        </ul>
+        <ul>
+          <li>서울 강남구 테헤란로415&#40;L7HOTELS강남타워 6,7,8층&#41; </li>
+          <li>개인정보보호책임자 홍세희 본부장  </li>
+        </ul>
+        <ul>
+          <li>사업자등록번호 314&#45;81&#45;03453</li>
+          <li>문의전화 1577&#45;5337</li>
+        </ul>
+       </div>
+       <div class="bottom">
+        <p>COPYRIGHT GENIE MUSIC CORP ALL RIGHTS RESERVED.</p>
+        <div class="sns">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+       </div>
+      
+    </div>
+
+    
+  </footer>
+</body>
+
+</html>

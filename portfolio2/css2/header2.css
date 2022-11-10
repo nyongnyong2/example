@@ -1,0 +1,48 @@
+header{
+  min-width: 1920px;
+  background-color: #0096ff;
+  color: #fff;
+  padding: 20px 0px;
+}
+
+header > .wrap{
+  width: 1640px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .wrap > .logo{
+  margin-left: 80px;
+}
+header > .wrap > .navi{
+  display: flex;
+}
+
+.navi > li {
+  margin-left: 80px;
+  font-size: 20px;
+}
+
+header > .wrap > .login{
+  padding-right: 20px;
+  display: flex;
+}
+.login > li{
+ margin-left: 20px;
+ font-size: 14px;
+}
+
+.wrap > .login li:first-child{
+  border-right: 3px solid #fff;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+header > .wrap >.navi li:hover
+,header > .wrap >.login li:hover{
+ color: #c0bdbd;
+}
+
+
+
+
