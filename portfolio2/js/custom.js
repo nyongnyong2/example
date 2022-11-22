@@ -16,7 +16,7 @@ $(function(){
 
 
   //about 왼쪽 화살표 버튼
-  $(".prev").click(function(){
+  $(".left").click(function(){
     if($(".contain >.wrap").is(":animated")) return false;
     //애니메이션 기능이 적용중일때 함수에 있는 코드를 실행하지 않음.
     var last = $(".contain >.wrap > .box").last();
@@ -25,7 +25,7 @@ $(function(){
    })
   });
   //about오른쪽 화살표 버튼
-  $(".next").click(function(){
+  $(".right").click(function(){
     if($(".contain>.wrap").is(":animated")) return false;
     leftSlide();
   });

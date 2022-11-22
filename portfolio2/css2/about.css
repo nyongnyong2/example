@@ -1,13 +1,10 @@
 /*contents1*/
 #contents1{
   min-width: 1920px;
-  position: relative;
-}
-#contents1 .all{
-  width: 1580px;
-  margin: auto;
 }
 #contents1 .title{
+  width: 1580px;
+  margin: auto;
   padding-top: 120px;
   box-sizing: border-box;
   display: flex;
@@ -30,6 +27,7 @@
   height: 24px;
   color: #aaa;
   cursor: pointer;
+  box-sizing: border-box;
 }
 #contents1 .title .txt .on{
   padding: 0px 14px;
@@ -45,12 +43,14 @@
 }
 
 #contents1 h2{
-  padding-left: 60px;
+  width: 1580px;
+  padding-left: 230px;
   font-size: 24px;
   color: #0096ff;
   margin: 80px 0px;
  }
  .contain{
+  position: relative;
   min-width: 1920px;
   height: 340px;
   overflow: hidden;
@@ -62,7 +62,8 @@
   margin-bottom: 20px;
 }
 .contain .wrap{
-  margin-left: 100px;
+ 
+  margin-left: 260px;
   width: 1400px;
   display: flex;
   justify-content: space-around;
@@ -78,42 +79,17 @@
   color: #8a8989;
 }
 .arrow{
+  cursor: pointer;
   color: #0096ff;
 }
 .arrow .left{
 position: absolute;
-top: 440px; left: 220px;
+top: 90px; left: 200px;
 }
 .arrow .right{
   position: absolute;
-  top: 440px; right: 210px;
+  top: 90px; right: 200px;
   }
-/*
-
-
-.contain>.wrap>.box h3{
-  font-size: 20px;
-  margin-bottom: 8px;
-} 
-.contain>.wrap>.box p{
-  font-size: 14px;
-  line-height: 22px;
-  color: #8a8989;
-}
-.contain button{
-  position: absolute;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: #0096ff;
-  font-size: 60px;
-  cursor: pointer;
-  top: 40%;
-  transform: translateY(-50%);
-  z-index: 999;
-}
-.prev{margin-left: 0px;}
-.next{right: 0;}*/
 
 /*contents2*/
 #contents2{
